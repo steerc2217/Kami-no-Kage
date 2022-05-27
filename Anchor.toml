@@ -1,0 +1,16 @@
+[programs.localnet]
+comptoir = "FCoMPzD3cihsM7EBSbXtorF2yHL4jJ6vrbWtdVaN7qZc"
+
+[registry]
+url = "https://anchor.projectserum.com"
+
+[provider]
+cluster = "localnet"
+wallet = "~/.config/solana/id.json"
+
+[scripts]
+test = "yarn run ts-mocha -p ./tsconfig.json -t 1000000 tests/**/*.ts"
+
+[[test.genesis]]
+address = "metaqbxxUerdq28cj1RbAWkYQm3ybzjb6a8bt518x1s"
+program = "./deps/metadata.so"
